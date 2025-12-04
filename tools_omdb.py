@@ -10,8 +10,11 @@ http://www.omdbapi.com/
 
 import os
 from typing import Optional, Dict, Any
+from dotenv import load_dotenv
 
 import requests
+
+load_dotenv()
 
 OMDB_API_KEY = os.getenv("OMDB_API_KEY")
 OMDB_URL = "http://www.omdbapi.com/"
